@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[90635],{90635:(e,a,c)=>{c.r(a),c.d(a,{ProductPrice:()=>u});var r=c(31085),s=c(64669),n=c(65124),i=c(77931),t=c(83079),u=e=>{var{product:a=t.vB,width:c=""}=e,{classes:u}=(0,n.Z)({width:c}),d=(0,i.Up)({product:a});return(0,r.jsx)(s.A,{variant:"body2",children:(0,r.jsx)("span",{className:u.bold,"data-automation":"ProductPrice_OneTimePurchasePrice-".concat(a.license),children:d})})}}}]);
+//# sourceMappingURL=90635.710f40a974429671.js.map

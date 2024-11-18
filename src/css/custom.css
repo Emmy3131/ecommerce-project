@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.inputs-outline{
+  outline: none;
+  background-color: transparent;
+}
+
+.row{
+  @apply px-20
+}
+.footer-h1{
+  @apply pb-5 font-medium
+}
+.footer-icon-box{
+  @apply bg-slate-600 rounded-md min-h-10 max-w-10 p-2
+}
+
+.product-header {
+  @apply p-3 pr-8 font-bold
+}
+
+.news-image{
+  @apply max-w-56
+}
+
+.news-header{
+  @apply font-bold text-xl
+}
+
+.news-readmore{
+  @apply text-base text-yellow-700 hover:text-blue-900 hover:border-2 hover:p-1
+}
+
+.product-item-box{
+  @apply flex gap-4 flex-col
+}
+.product-items{
+  @apply flex items-center gap-2
+}
