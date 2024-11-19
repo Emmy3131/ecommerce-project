@@ -1025,12 +1025,76 @@ video {
     grid-column: span 3 / span 3;
   }
 
+  .sm\:mb-5 {
+    margin-bottom: 1.25rem;
+  }
+
   .sm\:block {
     display: block;
   }
 
+  .sm\:flex {
+    display: flex;
+  }
+
+  .sm\:hidden {
+    display: none;
+  }
+
+  .sm\:max-w-40 {
+    max-width: 10rem;
+  }
+
+  .sm\:max-w-64 {
+    max-width: 16rem;
+  }
+
+  .sm\:max-w-80 {
+    max-width: 20rem;
+  }
+
+  .sm\:max-w-96 {
+    max-width: 24rem;
+  }
+
   .sm\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .sm\:flex-col {
+    flex-direction: column;
+  }
+
+  .sm\:justify-normal {
+    justify-content: normal;
+  }
+
+  .sm\:justify-start {
+    justify-content: flex-start;
+  }
+
+  .sm\:justify-end {
+    justify-content: flex-end;
+  }
+
+  .sm\:justify-center {
+    justify-content: center;
+  }
+
+  .sm\:justify-items-start {
+    justify-items: start;
+  }
+
+  .sm\:gap-0 {
+    gap: 0px;
+  }
+
+  .sm\:gap-5 {
+    gap: 1.25rem;
+  }
+
+  .sm\:gap-3 {
+    gap: 0.75rem;
   }
 }
 
