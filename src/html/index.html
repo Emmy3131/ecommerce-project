@@ -9,16 +9,21 @@
   <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body>
+<body class="">
   <section>
-    <header class="bg-yellow-400 py-4 sm:">
+    <header class="bg-yellow-400 py-4">
       <div class="row">
-        <div class="flex justify-between mb-5">
-          <aside>
+        <div class="flex justify-between mb-5 flex-col lg:flex-row">
+          <aside class="flex justify-between items-center">
             <h1 class="font-bold text-3xl">
               E-HUBEXPRESS
             </h1>
+
+            <aside class="lg:hidden">
+              <i class="fas fa-bars"></i>
+            </aside>
           </aside>
+
           <aside class="rounded-xl bg-slate-300 p-2">
             <input class="inputs-outline" type="text" placeholder="Search">
             <select class="inputs-outline text-gray-600" name="all-categories" id="">
@@ -51,8 +56,8 @@
 
         <hr class="border-1 border-y-gray-400">
 
-        <div class="mt-5">
-          <ul class="flex gap-8 text-gray-600">
+        <div class="mt-5 hidden lg:block">
+          <ul class="flex gap-4 lg:gap-8 text-gray-600 flex-col lg:flex-row">
             <li class="">
               <a href="#">
                 <i class="fa-solid fa-laptop"></i><span class="px-2">Laptops and Computers</span>
@@ -89,9 +94,10 @@
 
   
   <section>
-   <div class="row">
-    <div class="grid grid-cols-2 sm:grid-cols-4 border-4 border-white py-2">
-      <aside class=" bg-[#ebebeb] col-span-2 sm:col-span-3 md:row-span-3 p-10 border-r-8 border-white">
+   <div class="lg:row">
+    <div class="grid grid-cols-2 lg:grid-cols-4  py-2">
+      <!-- Left hand side -->
+      <aside class=" bg-[#ebebeb] col-span-2 sm:col-span-3 md:row-span-3 border-b-4 lg:border-b-0  p-10 lg:border-r-8 border-white">
         <div class="flex justify-center items-center">
           <div>
             <h3 class="font-normal text-base">
@@ -112,11 +118,12 @@
           </div>
         </div>
       </aside>
-      <aside class="bg-[#ebebeb] border-b-8 border-white">
+      <!-- Middle Content -->
+      <aside class="bg-[#ebebeb] border-b-8 border-white border-r-4 lg:border-r-0">
         <div class="">
-          <div class="flex justify-center items-center">
+          <div class="flex justify-center lg:items-center flex-col lg:flex-row">
             <div>
-              <img src="/project 1 image/laptop.png" alt="" class="max-w-40">
+              <img src="/project 1 image/laptop.png" alt="" class="max-w-24 lg:max-w-40">
             </div>
             <div>
               <h2>LAPTOP</h2>
@@ -124,11 +131,12 @@
             </div>
           </div>
       </aside>
-      <aside class="bg-[#ebebeb] border-b-8 border-white">
-        <div class="flex-col">
-          <div class="flex justify-center items-center">
+      <!-- Right hand side -->
+      <aside class="bg-[#ebebeb] border-b-8 border-white ">
+        <div class="">
+          <div class="flex lg:justify-center lg:items-center flex-col lg:flex-row">
             <div>
-              <img src="/project 1 image/laptop.png" alt="" class="max-w-40">
+              <img src="/project 1 image/laptop.png" alt="" class="max-w-24 lg:max-w-40">
             </div>
             <div>
               <h2>LAPTOP</h2>
@@ -140,7 +148,7 @@
         <div class="bg-[#ebebeb]">
           <div class="flex justify-center items-center">
             <div>
-              <img src="/project 1 image/laptop.png" alt="" class="max-w-40">
+              <img src="/project 1 image/laptop.png" alt="" class="max-w-24 lg:max-w-40">
             </div>
             <div>
               <h2>LAPTOP</h2>
@@ -153,112 +161,103 @@
   </section>
 
 
-  <section>
-    <div class="row">
-      <div class="flex justify-between bg-[#ebebeb] border-b-2 border-yellow-400 items-center">
+  <section class="">
+    <div class="lg:row">
+      <div class="flex justify-between bg-[#ebebeb] border-b-2 border-yellow-400">
         <aside class="bg-yellow-500">
-          <h2 class="product-header">FEATUERED PRODUCTS</h2>
-        </aside>
-        <aside class="text-sm flex gap-8">
-          <button class="hover:text-yellow-500">ALL</button>
-          <button class="hover:text-yellow-500">LAPTOPS</button>
-          <button class="hover:text-yellow-500">SMARTPHONES</button>
-          <button class="hover:text-yellow-500">ACCESSORIES</button>
-          <button class="hover:text-yellow-500">
-
-          </button>
+          <h2 class="product-header">FEATURED PRODUCTS</h2>
         </aside>
       </div>
-      <div class="flex border-2 my-2">
-        <aside class="basis-80 border-r-2">
-          <div class="relative">
-            <h2 class="bg-red-900 text-white max-w-28 p-2 absolute -skew-x-12">SALE</h2>
-          </div>
-          <div>
-            <img src="/project 1 image/iphone_16_promax-removebg-preview.png" alt="emmy">
-          </div>
-          <hr class="border-x-red-600 border-2 ">
 
-          <div>
-            <i class="fas fa-star text-yellow-500"></i>
-          <i class="fas fa-star text-yellow-500"></i>
-          <i class="fas fa-star text-yellow-500"></i>
-          <i class="fas fa-star text-yellow-500"></i>
-          <i class="fas fa-star text-yellow-500"></i>
-
-          <p>Iphone 16 promax</p>
-          <p class="text-orange-900 font-xl font-bold">$1200.00</p>
-          </div>
-        </aside>
-        <aside class="basis-80 border-r-2">
-          <div>
-            <img src="/project 1 image/iphone_16_promax-removebg-preview.png" alt="emmy">
-          </div>
-          <hr class="border-x-red-600 border-2 ">
-
-          <div>
-            <i class="fas fa-star text-yellow-500"></i>
-          <i class="fas fa-star text-yellow-500"></i>
-          <i class="fas fa-star text-yellow-500"></i>
-          <i class="fas fa-star text-yellow-500"></i>
-          <i class="fas fa-star text-yellow-500"></i>
-
-          <p>Iphone 16 promax</p>
-          <p class="text-orange-900 font-xl font-bold">$1200.00</p>
-          </div>
-        </aside>
-        <aside class="basis-80 border-r-2">
-          <div>
-            <div class="relative">
-              <h2 class="bg-red-900 text-white max-w-28 p-2 absolute">SALE</h2>
+      <div class="flex flex-col lg:flex-row border-2">
+        <aside class="lg:border-r-2">
+          <div class="flex flex-row lg:flex-col justify-start items-center">
+            <div>
+              <img src="/project 1 image/iphone_16_promax-removebg-preview.png" alt="">
             </div>
-            <img src="/project 1 image/iphone_16_promax-removebg-preview.png" alt="emmy">
-          </div>
-          <hr class="border-x-red-600 border-2 ">
 
-          <div>
-            <i class="fas fa-star text-yellow-500"></i>
-          <i class="fas fa-star text-yellow-500"></i>
-          <i class="fas fa-star text-yellow-500"></i>
-          <i class="fas fa-star text-yellow-500"></i>
-          <i class="fas fa-star text-yellow-500"></i>
+            <div class="lg:border-t-2">
+              <i class="fas fa-star text-yellow-500"></i>
+              <i class="fas fa-star text-yellow-500"></i>
+              <i class="fas fa-star text-yellow-500"></i>
+              <i class="fas fa-star text-yellow-500"></i>
+              <i class="fas fa-star text-yellow-500"></i>
 
-          <p>Iphone 16 promax</p>
-          <p class="text-orange-900 font-xl font-bold">$1200.00</p>
+              <p>iphone_16_promax</p>
+              <p class="text-red-700">$110.00</p>
+            </div>
           </div>
         </aside>
-        <aside class="basis-80 border-r-2">
-          <div>
-            <img src="/project 1 image/iphone_16_promax-removebg-preview.png" alt="emmy">
-          </div>
-          <hr class="border-x-red-600 border-2 ">
+        <aside class="border-r-2">
+          <div class="flex flex-row lg:flex-col justify-start items-center">
+            <div>
+              <img src="/project 1 image/iphone_16_promax-removebg-preview.png" alt="">
+            </div>
 
-          <div>
-            <i class="fas fa-star text-yellow-500"></i>
-          <i class="fas fa-star text-yellow-500"></i>
-          <i class="fas fa-star text-yellow-500"></i>
-          <i class="fas fa-star text-yellow-500"></i>
-          <i class="fas fa-star text-yellow-500"></i>
+            <div class="lg:border-t-2">
+              <i class="fas fa-star text-yellow-500"></i>
+              <i class="fas fa-star text-yellow-500"></i>
+              <i class="fas fa-star text-yellow-500"></i>
+              <i class="fas fa-star text-yellow-500"></i>
+              <i class="fas fa-star text-yellow-500"></i>
 
-          <p>Iphone 16 promax</p>
-          <p class="text-orange-900 font-xl font-bold">$1200.00</p>
+              <p>iphone_16_promax</p>
+              <p class="text-red-700">$110.00</p>
+            </div>
           </div>
         </aside>
-        <aside class="basis-80 border-r-2">
-          <div>
-            <img src="/project 1 image/iphone_16_promax-removebg-preview.png" alt="emmy">
+        <aside class="border-r-2">
+          <div class="flex flex-row lg:flex-col justify-start items-center">
+            <div>
+              <img src="/project 1 image/iphone_16_promax-removebg-preview.png" alt="">
+            </div>
+
+            <div class="lg:border-t-2">
+              <i class="fas fa-star text-yellow-500"></i>
+              <i class="fas fa-star text-yellow-500"></i>
+              <i class="fas fa-star text-yellow-500"></i>
+              <i class="fas fa-star text-yellow-500"></i>
+              <i class="fas fa-star text-yellow-500"></i>
+
+              <p>iphone_16_promax</p>
+              <p class="text-red-700">$110.00</p>
+            </div>
           </div>
-          <hr class="border-x-red-600 border-2 ">
+        </aside>
+        <aside class="border-r-2">
+          <div class="flex flex-row lg:flex-col justify-start items-center">
+            <div>
+              <img src="/project 1 image/iphone_16_promax-removebg-preview.png" alt="">
+            </div>
 
-          <div>
-            <i class="fas fa-star text-yellow-500"></i>
-          <i class="fas fa-star text-yellow-500"></i>
-          <i class="fas fa-star text-yellow-500"></i>
-          <i class="fas fa-star text-yellow-500"></i>
-          <i class="fas fa-star text-yellow-500"></i>
+            <div class="lg:border-t-2">
+              <i class="fas fa-star text-yellow-500"></i>
+              <i class="fas fa-star text-yellow-500"></i>
+              <i class="fas fa-star text-yellow-500"></i>
+              <i class="fas fa-star text-yellow-500"></i>
+              <i class="fas fa-star text-yellow-500"></i>
 
-          <p>Iphone 16 promax</p>
-          <p class="text-orange-900 font-xl font-bold">$1200.00</p>
+              <p>iphone_16_promax</p>
+              <p class="text-red-700">$110.00</p>
+            </div>
+          </div>
+        </aside>
+        <aside class="lg:border-r-2">
+          <div class="flex flex-row lg:flex-col justify-start items-center">
+            <div>
+              <img src="/project 1 image/iphone_16_promax-removebg-preview.png" alt="">
+            </div>
+
+            <div class="lg:border-t-2">
+              <i class="fas fa-star text-yellow-500"></i>
+              <i class="fas fa-star text-yellow-500"></i>
+              <i class="fas fa-star text-yellow-500"></i>
+              <i class="fas fa-star text-yellow-500"></i>
+              <i class="fas fa-star text-yellow-500"></i>
+
+              <p>iphone_16_promax</p>
+              <p class="text-red-700">$110.00</p>
+            </div>
           </div>
         </aside>
       </div>
@@ -267,7 +266,7 @@
 
 
   <section>
-    <div class="row">
+    <div class="lg:row">
       <div class="flex justify-between bg-[#ebebeb] border-b-2 border-yellow-400">
         <aside class="bg-yellow-500">
           <h2 class="product-header">FROM OUR BLOG</h2>
@@ -277,9 +276,9 @@
         </aside>
       </div>
 
-      <div class="flex gap-5 mt-2 mb-5">
+      <div class="flex gap-5 mt-2 mb-5 flex-col lg:flex-row">
         <aside class="">
-          <div class="flex gap-5 justify-center text-xs border-2">
+          <div class="flex gap-5 justify-center text-xs border-2 flex-col lg:flex-row">
             <div class="bg-slate-300">
               <img class="news-image" src="/project 1 image/laptop.png" alt="">
             </div>
@@ -302,7 +301,7 @@
           </div>
         </aside>
         <aside>
-          <div class="flex gap-5 text-xs border-2">
+          <div class="flex gap-5 text-xs border-2 flex-col lg:flex-row">
             <div class="bg-slate-300">
               <img class="news-image" src="/project 1 image/laptop.png" alt="">
             </div>
@@ -330,11 +329,11 @@
 
 
   <section class="mb-10">
-    <div class="row">
-      <div class="flex gap-14">
+    <div class="lg:row">
+      <div class="flex gap-14 flex-col lg:flex-row">
 
 
-        <aside class="basis-96">
+        <aside class="lg:basis-96">
           <div class="product-box">
             <div class="mb-5 font-semibold">
               <h1>
@@ -377,7 +376,7 @@
         </aside>
 
 
-        <aside class="basis-96">
+        <aside class="lg:basis-96">
           <div class="product-box">
             <div class="mb-5 font-semibold">
               <h1>
@@ -419,7 +418,7 @@
         </aside>
 
 
-        <aside class="basis-96">
+        <aside class="lg:basis-96">
           <div class="product-box">
             <div class="mb-5 font-semibold">
               <h1>
@@ -467,8 +466,8 @@
 
 
   <footer class="bg-slate-950 pt-10 pb-5 leading-8">
-    <div class="row">
-      <div class="flex gap-8 text-gray-300">
+    <div class="lg:row">
+      <div class="flex flex-col lg:flex-row gap-8 text-gray-300">
         <div>
           <h1 class="footer-h1">
             CONTACT INFORMATION
@@ -509,7 +508,7 @@
           <h1 class="footer-h1">
             NEWSLETTER
           </h1>
-          <aside class="flex gap-12">
+          <aside class="flex gap-12 flex-col lg:flex-row">
             <div class="flex-1 max-w-sm">
               <p class="">
                 Get all the latest information on Events sales and Offerss. Sign up for newsletter today.
@@ -526,8 +525,9 @@
 
           <hr class="border-1 border-y-gray-400 mt-5">
 
-          <div class="flex gap-10 mt-5">
-            <aside class="">
+          <div class="flex gap-10 mt-5 flex-wrap">
+            <aside class="shrink-0">
+
               <h1 class="footer-h1">MY ACCOUNT</h1>
               <div>
                 <ul>
@@ -546,7 +546,8 @@
                 </ul>
               </div>
             </aside>
-            <aside>
+
+            <aside class="shrink-0">
               <h1 class="footer-h1">INFORMATION</h1>
               <div>
                 <ul class="">
@@ -565,7 +566,8 @@
                 </ul>
               </div>
             </aside>
-            <aside>
+
+            <aside class="shrink-0">
               <h1 class="footer-h1">CUSTOMER SERVICES</h1>
               <div>
                 <ul>
@@ -584,7 +586,9 @@
                 </ul>
               </div>
             </aside>
-            <aside>
+
+            <aside class="shrink-0">
+
               <h1 class="footer-h1">PAYMENT & SHIPPING</h1>
               <div>
                 <ul>

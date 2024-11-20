@@ -10,7 +10,7 @@
 }
 
 .row{
-  @apply px-20
+  @apply px-10
 }
 .footer-h1{
   @apply pb-5 font-medium
